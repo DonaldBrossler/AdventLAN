@@ -44,6 +44,13 @@ priorisiert und begründet 5. Offene Fragen 6. Aufwand (S/M/L) und empfohlenes M
 - Prüfen (Windows): `tools\check.cmd`
 - Voraussetzung: .NET SDK 8
 
+## Arbeitsmodell (Cloud, freigegeben 2026-11-15)
+- GitHub (privates Repo) ist die zentrale Quelle. Claude arbeitet in Cloud-Sitzungen auf Branches.
+- Merge in main nur nach Freigabe. CI (`.github/workflows/check.yml`) läuft bei jedem Push.
+- Lokal nur: Godot-Editor, Spielstart, Playtests (ab Phase 5).
+- Der Stand steht in docs/status.md, nicht im Chatverlauf: ein Chat endet, die Dateien bleiben.
+- Cloud-Umgebung braucht Zugriff auf api.nuget.org und dot.net (Einstellung in claude.ai).
+
 ## Ordner
 - docs/vision.md – Kernidee (1 Seite)
 - docs/design/ – je Mechanik eine Datei

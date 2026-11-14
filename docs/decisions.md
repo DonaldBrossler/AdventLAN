@@ -10,3 +10,4 @@
 | 2026-11-14 | Tests: eigener minimaler Test-Runner ohne NuGet-Pakete (Setup-Umgebung hatte keinen NuGet-Zugang); Wechsel auf xUnit jederzeit möglich | Weniger Abhängigkeiten, lokal verifizierbar |
 | 2026-11-15 | check.cmd prüft SDK und Testausgabe explizit statt nur den Exit-Code (meldete ohne SDK fälschlich grün) | Fehler beim ersten Lauf auf Windows |
 | 2026-11-15 | Phase 3 (Setup) abgenommen | Donald |
+| 2026-11-15 | Arbeit in der Cloud über GitHub (privates Repo), lokal nur Godot-Editor und Playtests | Arbeiten von mehreren Geräten, Backup, CI bei jedem Push |
