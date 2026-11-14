@@ -1,0 +1,4 @@
+* text=auto
+tools/check text eol=lf
+*.sh text eol=lf
+*.cmd text eol=crlf

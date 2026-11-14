@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Prüft das Projekt: Build und Tests. Gibt nur eine Zusammenfassung oder die Fehlerstellen aus.
+set -u
+cd "$(dirname "$0")/.."
+
+if ! command -v dotnet >/dev/null 2>&1; then
+  echo "FEHLER: .NET SDK 8 nicht gefunden"
+  exit 2
+fi
+
+build_log=$(dotnet build tests/AdventLAN.Core.Tests -c Release -nologo -v quiet 2>&1)
+if [ $? -ne 0 ]; then
+  echo "BUILD FEHLGESCHLAGEN"
+  echo "$build_log" | grep -E "error|Fehler" | sort -u | head -20
+  exit 1
+fi
+
+dotnet run --project tests/AdventLAN.Core.Tests -c Release --no-build
+status=$?
+
+if [ $status -eq 0 ]; then
+  echo "check: grün"
+else
+  echo "check: ROT"
+fi
+exit $status

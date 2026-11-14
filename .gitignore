@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.user
+.godot/
+.import/
+export_presets.cfg
+ratings.json
