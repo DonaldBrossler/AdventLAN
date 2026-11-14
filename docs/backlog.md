@@ -2,7 +2,7 @@
 
 | ID | Titel | Status | Modell |
 |---|---|---|---|
-| F-001 | Kernmechanik: Bewegung, Zielen, Schuss, Treffer, Tod, Respawn (reine Logik) | Spec-Entwurf, wartet auf Freigabe | Opus (Spec), Sonnet (Umsetzung) |
+| F-001 | Kernmechanik: Bewegung, Zielen, Schuss, Treffer, Tod, Respawn (reine Logik) | Umgesetzt, wartet auf Abnahme | Opus (Spec), Sonnet (Umsetzung) |
 | F-002 | Sichtkegel und Fog of War (Server-Sichtbarkeit) | Idee | Opus |
 | F-003 | Netzwerk-Skelett: Server, Clients, Lasttest mit simulierten Spielern | Idee | Opus (Architektur), Sonnet |
 | F-004 | Lobby: Teamwahl, Bots per Klick zuweisen | Idee | Sonnet |

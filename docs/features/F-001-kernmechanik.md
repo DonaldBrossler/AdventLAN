@@ -1,6 +1,6 @@
 # F-001 – Kernmechanik (reine Logik)
 
-Status: Entwurf, wartet auf Freigabe
+Status: umgesetzt auf Branch feature/f-001-kernmechanik, wartet auf Abnahme (Spec freigegeben 2026-11-15)
 Empfohlenes Modell: Sonnet (Umsetzung), Opus (diese Spec)
 
 ## Ziel
@@ -79,3 +79,21 @@ M. Etwa 10–12 Stunden Arbeit in mehreren Schritten: (1) Datentypen und Karte, 
 2. Magazin und Nachladen statt unbegrenzter Munition (empfohlen: bessere Spieltempo-Kontrolle).
 3. Friendly Fire aus.
 4. Matchende bei 100 Punkten oder 10 Minuten.
+
+## Umsetzungsnotizen (2026-11-15)
+Kleine Klarstellungen, die die Spec offen ließ:
+- Ein leeres Magazin lädt automatisch nach (Ablauf wie bei der Nachladetaste, 60 Ticks).
+- Projektile fliegen durch Spieler mit Spawnschutz hindurch, sie werden nicht verbraucht. Gleiches gilt für Teammitglieder.
+- Spawnschutz zählt 45 Ticks ab dem Spawn-Tick. Wer schießt, verliert ihn sofort.
+- Der Matchstart gibt allen Spielern Spawnschutz, ebenso jeder Respawn.
+- Spawnpunkte: bevorzugt einer ohne lebenden Spieler im Umkreis von 1 m, sonst ein zufälliger.
+- JSON wird im eigenen Projekt `src/core/AdventLAN.Content` geladen (net8.0, System.Text.Json), weil .NET Standard 2.1 kein JSON mitbringt. Der Core selbst bleibt frei von Paketen.
+- Die Lastmessung ist ein eigenes Programm: `dotnet run --project tools/SimBench -c Release`. Sie ist nicht Teil von `tools/check`.
+
+Ergebnis der Lastmessung (Cloud-Rechner mit 2 Kernen, nur Simulation, ohne Netzwerk und Fog of War):
+| Spieler | Ø pro Tick | Maximum |
+|---|---|---|
+| 2 × 8 | 0,005 ms | 1,08 ms |
+| 2 × 16 | 0,004 ms | 0,16 ms |
+| 2 × 32 | 0,010 ms | 0,60 ms |
+Die Spiellogik ist damit weit unter dem Richtwert (2 ms). Netzwerk und Sichtberechnung werden den Takt bestimmen, nicht diese Regeln.

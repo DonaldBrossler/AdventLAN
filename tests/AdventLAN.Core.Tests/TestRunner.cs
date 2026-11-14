@@ -21,10 +21,21 @@ namespace AdventLAN.Core.Tests
             if (!condition) throw new AssertException(message);
         }
 
-        public static void Equal<T>(T expected, T actual)
+        public static void False(bool condition, string message = "Bedingung ist wahr")
+        {
+            if (condition) throw new AssertException(message);
+        }
+
+        public static void Equal<T>(T expected, T actual, string message = "")
         {
             if (!EqualityComparer<T>.Default.Equals(expected, actual))
-                throw new AssertException($"Erwartet: {expected}, tatsächlich: {actual}");
+                throw new AssertException($"Erwartet: {expected}, tatsächlich: {actual} {message}".TrimEnd());
+        }
+
+        public static void Near(float expected, float actual, float tolerance, string message = "")
+        {
+            if (MathF.Abs(expected - actual) > tolerance)
+                throw new AssertException($"Erwartet: {expected} (±{tolerance}), tatsächlich: {actual} {message}".TrimEnd());
         }
     }
 

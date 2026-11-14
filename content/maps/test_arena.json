@@ -1,0 +1,27 @@
+{
+  "width": 60,
+  "height": 40,
+  "obstacles": [
+    { "minX": 28, "minY": 16, "maxX": 32, "maxY": 24 },
+    { "minX": 14, "minY": 6, "maxX": 16, "maxY": 14 },
+    { "minX": 14, "minY": 26, "maxX": 16, "maxY": 34 },
+    { "minX": 44, "minY": 6, "maxX": 46, "maxY": 14 },
+    { "minX": 44, "minY": 26, "maxX": 46, "maxY": 34 },
+    { "minX": 22, "minY": 4, "maxX": 38, "maxY": 6 },
+    { "minX": 22, "minY": 34, "maxX": 38, "maxY": 36 },
+    { "minX": 10, "minY": 18, "maxX": 12, "maxY": 22 },
+    { "minX": 48, "minY": 18, "maxX": 50, "maxY": 22 },
+    { "minX": 20, "minY": 12, "maxX": 23, "maxY": 14 },
+    { "minX": 37, "minY": 12, "maxX": 40, "maxY": 14 },
+    { "minX": 20, "minY": 26, "maxX": 23, "maxY": 28 },
+    { "minX": 37, "minY": 26, "maxX": 40, "maxY": 28 }
+  ],
+  "redSpawns": [
+    { "x": 4, "y": 6 }, { "x": 4, "y": 14 }, { "x": 4, "y": 20 }, { "x": 4, "y": 26 },
+    { "x": 4, "y": 34 }, { "x": 7, "y": 10 }, { "x": 7, "y": 20 }, { "x": 7, "y": 30 }
+  ],
+  "blueSpawns": [
+    { "x": 56, "y": 6 }, { "x": 56, "y": 14 }, { "x": 56, "y": 20 }, { "x": 56, "y": 26 },
+    { "x": 56, "y": 34 }, { "x": 53, "y": 10 }, { "x": 53, "y": 20 }, { "x": 53, "y": 30 }
+  ]
+}

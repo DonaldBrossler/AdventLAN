@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1F7ED4FB-E203-45EB-A161-5BCC8FBFE8D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{5C6B2E75-C673-4663-BF0E-7714F351F1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventLAN.Core", "src\core\AdventLAN.Core\AdventLAN.Core.csproj", "{563FBEB5-479D-4F78-B074-C2A0DEF3654A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventLAN.Content", "src\core\AdventLAN.Content\AdventLAN.Content.csproj", "{FE644B36-40CC-4152-969E-17BA7E786262}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1E211395-7422-4C0F-81BE-DD9B8A239DE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventLAN.Core.Tests", "tests\AdventLAN.Core.Tests\AdventLAN.Core.Tests.csproj", "{806039E8-32A9-412C-96ED-FEF9DD06A99D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{EE5EC357-213E-4476-BEE1-548DC7D933AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimBench", "tools\SimBench\SimBench.csproj", "{A5EC339A-FD11-4833-9AD3-5BCDA06D3F9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{563FBEB5-479D-4F78-B074-C2A0DEF3654A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563FBEB5-479D-4F78-B074-C2A0DEF3654A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563FBEB5-479D-4F78-B074-C2A0DEF3654A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563FBEB5-479D-4F78-B074-C2A0DEF3654A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE644B36-40CC-4152-969E-17BA7E786262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE644B36-40CC-4152-969E-17BA7E786262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE644B36-40CC-4152-969E-17BA7E786262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE644B36-40CC-4152-969E-17BA7E786262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{806039E8-32A9-412C-96ED-FEF9DD06A99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806039E8-32A9-412C-96ED-FEF9DD06A99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806039E8-32A9-412C-96ED-FEF9DD06A99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{806039E8-32A9-412C-96ED-FEF9DD06A99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5EC339A-FD11-4833-9AD3-5BCDA06D3F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5EC339A-FD11-4833-9AD3-5BCDA06D3F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5EC339A-FD11-4833-9AD3-5BCDA06D3F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5EC339A-FD11-4833-9AD3-5BCDA06D3F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C6B2E75-C673-4663-BF0E-7714F351F1E8} = {1F7ED4FB-E203-45EB-A161-5BCC8FBFE8D5}
+		{563FBEB5-479D-4F78-B074-C2A0DEF3654A} = {5C6B2E75-C673-4663-BF0E-7714F351F1E8}
+		{FE644B36-40CC-4152-969E-17BA7E786262} = {5C6B2E75-C673-4663-BF0E-7714F351F1E8}
+		{806039E8-32A9-412C-96ED-FEF9DD06A99D} = {1E211395-7422-4C0F-81BE-DD9B8A239DE0}
+		{A5EC339A-FD11-4833-9AD3-5BCDA06D3F9F} = {EE5EC357-213E-4476-BEE1-548DC7D933AA}
+	EndGlobalSection
+EndGlobal

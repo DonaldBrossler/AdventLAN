@@ -1,0 +1,19 @@
+{
+  "tickRate": 30,
+  "playerRadius": 0.4,
+  "moveSpeed": 5,
+  "maxHealth": 100,
+  "respawnSeconds": 2.5,
+  "spawnProtectionSeconds": 1.5,
+  "scoreLimit": 100,
+  "timeLimitSeconds": 600,
+  "weapon": {
+    "damage": 20,
+    "shotsPerSecond": 8,
+    "spreadDegrees": 2,
+    "magazineSize": 30,
+    "reloadSeconds": 2,
+    "projectileSpeed": 60,
+    "range": 40
+  }
+}

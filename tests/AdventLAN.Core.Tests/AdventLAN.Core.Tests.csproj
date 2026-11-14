@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\core\AdventLAN.Core\AdventLAN.Core.csproj" />
+    <ProjectReference Include="..\..\src\core\AdventLAN.Content\AdventLAN.Content.csproj" />
   </ItemGroup>
 
 </Project>

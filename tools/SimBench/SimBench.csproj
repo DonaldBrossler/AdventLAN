@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\core\AdventLAN.Core\AdventLAN.Core.csproj" />
+    <ProjectReference Include="..\..\src\core\AdventLAN.Content\AdventLAN.Content.csproj" />
+    <Compile Include="..\..\tests\AdventLAN.Core.Tests\RandomBots.cs" Link="RandomBots.cs" />
+  </ItemGroup>
+
+</Project>

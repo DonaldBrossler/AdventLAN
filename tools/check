@@ -8,7 +8,7 @@ if ! command -v dotnet >/dev/null 2>&1; then
   exit 2
 fi
 
-build_log=$(dotnet build tests/AdventLAN.Core.Tests -c Release -nologo -v quiet 2>&1)
+build_log=$(dotnet build AdventLAN.sln -c Release -nologo -v quiet 2>&1)
 if [ $? -ne 0 ]; then
   echo "BUILD FEHLGESCHLAGEN"
   echo "$build_log" | grep -E "error|Fehler" | sort -u | head -20

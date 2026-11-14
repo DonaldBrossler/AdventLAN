@@ -42,6 +42,7 @@ priorisiert und begründet 5. Offene Fragen 6. Aufwand (S/M/L) und empfohlenes M
 ## Befehle
 - Prüfen (Linux/macOS/CI): `tools/check`
 - Prüfen (Windows): `tools\check.cmd`
+- Lastmessung: `dotnet run --project tools/SimBench -c Release`
 - Voraussetzung: .NET SDK 8
 
 ## Arbeitsmodell (Cloud, freigegeben 2026-11-15)
@@ -58,10 +59,11 @@ priorisiert und begründet 5. Offene Fragen 6. Aufwand (S/M/L) und empfohlenes M
 - docs/decisions.md – Entscheidungslog (was, warum, Datum)
 - docs/backlog.md – ID, Titel, Status, empfohlenes Modell
 - docs/status.md – Stand und nächster Schritt
-- src/core/ – reine Spiellogik, .NET Standard 2.1, keine Godot-Typen, ohne Grafik testbar
+- src/core/AdventLAN.Core – reine Spiellogik, .NET Standard 2.1, keine Godot-Typen, ohne Grafik testbar
+- src/core/AdventLAN.Content – lädt JSON aus content/ (net8.0)
 - src/game/ – Godot-Projekt: Engine, Grafik, Sound, UI (ab Phase 5)
 - content/ – Level- und Spieldaten als Text/JSON
-- tests/, tools/ – Tests, check-Befehl, Prüfprogramme
+- tests/, tools/ – Tests, check-Befehl, Prüfprogramme (tools/SimBench: Lastmessung)
 - .claude/ – Hilfsagenten, Skills, Einstellungen
 
 ## Technische Regeln

@@ -11,3 +11,6 @@
 | 2026-11-15 | check.cmd prüft SDK und Testausgabe explizit statt nur den Exit-Code (meldete ohne SDK fälschlich grün) | Fehler beim ersten Lauf auf Windows |
 | 2026-11-15 | Phase 3 (Setup) abgenommen | Donald |
 | 2026-11-15 | Arbeit in der Cloud über GitHub (privates Repo), lokal nur Godot-Editor und Playtests | Arbeiten von mehreren Geräten, Backup, CI bei jedem Push |
+| 2026-11-15 | F-001 Spec freigegeben (Projektile mit Flugzeit, Magazin, kein Friendly Fire, Ende bei 100 Punkten oder 10 min) | Donald |
+| 2026-11-15 | JSON-Loader im eigenen Projekt AdventLAN.Content (net8.0); Core bleibt .NET Standard 2.1 ohne Pakete | Standard 2.1 hat kein JSON, Unity-Wechsel bleibt möglich |
+| 2026-11-15 | Lösungsdatei AdventLAN.sln; check baut alle Projekte, Lastmessung als eigenes Programm tools/SimBench | Messung ist kein Test und rechnerabhängig |
